@@ -31,8 +31,6 @@ En développement, donnez les permissions d'écriture aux dossiers uploads et da
 
 ### Liste des fonctionnalités supplémentaires
 
-le nom est considéré comme devant être unique
-
 ### Divers
 
 
@@ -41,18 +39,5 @@ le nom est considéré comme devant être unique
 
 ### URLs deploiement
 
-* étudiant Nom Prenom : Wieder Noam
-  * URL : http://infolab.epfc.eu:58358/prwb_2526_f05	
-  * Mot de passe : Password1,
-* étudiant Nom Prenom : Frauenrath Mickaël
-  * URL : http://infolab.epfc.eu:58356/prwb_2526_f05
-  * Mot de passe : Password1,
-* étudiant Nom Prénom : Kulesza Krystian
-  * URL : http://infolab.epfc.eu:58357/prwb_2526_f05
-  * Mot de passe : Password1,
-  
-
 
 ## Notes de version itération 3
-
-La feature B de l'itération 3 est manquante
