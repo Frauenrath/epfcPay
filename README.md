@@ -1,34 +1,34 @@
-# EPFCpay – Plateforme de Ventes aux Enchères
+# EPFCpay – Auction Platform
 
-C'est est une application web de ventes aux enchères développée dans le cadre du bachelier en Développement d'Applications à l'**EPFC** (Bruxelles). 
+This is a web-based auction application developed as part of the Bachelor's degree in Application Development at **EPFC** (Brussels).
 
-La plateforme permet aux utilisateurs de mettre des articles aux enchères, de parcourir les annonces disponibles et de participer activement aux enchères en ligne.
-
----
-
-## Fonctionnalités Principales
-
-* **Gestion des annonces :** Création, édition et gestion des offres de ventes aux enchères.
-* **Système d'enchères :** Consultation des articles et participation aux enchères en temps réel.
-* **Gestion des données :** Traitement sécurisé des opérations en base de données et suivi des transactions.
-* **Architecture modulaire :** Séparation claire entre la logique métier, la gestion des données et l'interface utilisateur.
+The platform allows users to list items for auction, browse available listings, and actively participate in online bidding.
 
 ---
 
-## Technologies Utilisées
+## Key Features
 
-* **Backend :** PHP 8
-* **Architecture :** MVC (Modèle-Vue-Contrôleur)
-* **Frontend :** HTML5, CSS3, Bootstrap 5, JavaScript / jQuery
-* **Base de données :** MySQL / PostgreSQL
-* **Serveur Web :** Apache
+- **Listing Management:** Creation, editing, and management of auction listings.
+- **Bidding System:** Browsing items and participating in real-time auctions.
+- **Data Management:** Secure processing of database operations and transaction tracking.
+- **Modular Architecture:** Clear separation between business logic, data management, and the user interface.
 
 ---
 
-## Architecture du Projet
+## Technologies Used
 
-Le projet repose sur le patron de conception **MVC (Model-View-Controller)** pour garantir une maintenance aisée et une évolutivité du code :
+- **Backend:** PHP 8
+- **Architecture:** MVC (Model-View-Controller)
+- **Frontend:** HTML5, CSS3, Bootstrap 5, JavaScript / jQuery
+- **Database:** MySQL / PostgreSQL
+- **Web Server:** Apache
 
-* **Modèle (Model) :** Gestion de la logique métier, des requêtes SQL et de la persistance des données.
-* **Vue (View) :** Interface utilisateur réactive et responsive conçue avec Bootstrap 5.
-* **Contrôleur (Controller) :** Intermédiaire traitant les requêtes utilisateurs et synchronisant les données entre les modèles et les vues.
+---
+
+## Project Architecture
+
+The project relies on the **MVC (Model-View-Controller)** design pattern to ensure easy maintenance and code scalability:
+
+- **Model:** Management of business logic, SQL queries, and data persistence.
+- **View:** Reactive and responsive user interface designed with Bootstrap 5.
+- **Controller:** Intermediary handling user requests and synchronizing data between models and views.
