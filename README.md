@@ -1,43 +1,34 @@
-# Projet PRWB 2526 - Groupe f05 - EPayFC
+# EPFCpay – Plateforme de Ventes aux Enchères
 
-## Installation sous MacOS ou Linux
+C'est est une application web de ventes aux enchères développée dans le cadre du bachelier en Développement d'Applications à l'**EPFC** (Bruxelles). 
 
-En développement, donnez les permissions d'écriture aux dossiers uploads et database :
+La plateforme permet aux utilisateurs de mettre des articles aux enchères, de parcourir les annonces disponibles et de participer activement aux enchères en ligne.
 
-* `sudo chmod -R 777 uploads`
-* `sudo chmod -R 777 database`
+---
 
-## Notes de version itération 1
+## Fonctionnalités Principales
 
-### Liste des utilisateurs et mots de passes
+* **Gestion des annonces :** Création, édition et gestion des offres de ventes aux enchères.
+* **Système d'enchères :** Consultation des articles et participation aux enchères en temps réel.
+* **Gestion des données :** Traitement sécurisé des opérations en base de données et suivi des transactions.
+* **Architecture modulaire :** Séparation claire entre la logique métier, la gestion des données et l'interface utilisateur.
 
-* boverhaegen@epfc.eu, password "Password1,", utilisateur
-* mamichel@epfc.eu, password "Password1,", utilisateur
-* quhouben@epfc.eu, password "Password1,", utilisateur
-* xapigeolet@epfc.eu, password "Password1,", utilisateur
-* admin@epfc.eu, password "Password1,", administrateur
+---
 
-### Liste des bugs connus (update avec la grille d'évaluation)
+## Technologies Utilisées
 
-* bug 1
+* **Backend :** PHP 8
+* **Architecture :** MVC (Modèle-Vue-Contrôleur)
+* **Frontend :** HTML5, CSS3, Bootstrap 5, JavaScript / jQuery
+* **Base de données :** MySQL / PostgreSQL
+* **Serveur Web :** Apache
 
-* bug 2
+---
 
-* bug 3
+## Architecture du Projet
 
-* bug 4
+Le projet repose sur le patron de conception **MVC (Model-View-Controller)** pour garantir une maintenance aisée et une évolutivité du code :
 
-* défauts connus :
-
-### Liste des fonctionnalités supplémentaires
-
-### Divers
-
-
-## Notes de version itération 2
-
-
-### URLs deploiement
-
-
-## Notes de version itération 3
+* **Modèle (Model) :** Gestion de la logique métier, des requêtes SQL et de la persistance des données.
+* **Vue (View) :** Interface utilisateur réactive et responsive conçue avec Bootstrap 5.
+* **Contrôleur (Controller) :** Intermédiaire traitant les requêtes utilisateurs et synchronisant les données entre les modèles et les vues.
