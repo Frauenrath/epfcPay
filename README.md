@@ -4,6 +4,8 @@ This is a web-based auction application developed as part of the Bachelor's degr
 
 The platform allows users to list items for auction, browse available listings, and actively participate in online bidding.
 
+(Group project carried out in collaboration with two peers.)
+
 ---
 
 ## Key Features
