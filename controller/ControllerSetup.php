@@ -28,7 +28,7 @@ class ControllerSetup extends Controller {
                 Configuration::get("dbpassword")
             );
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = file_get_contents("database/{$dbname}.sql");
+            $sql = file_get_contents("database/01_{$dbname}.sql");
             $query = $pdo->prepare($sql);
 
             if ($query->execute()) {

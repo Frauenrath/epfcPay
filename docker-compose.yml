@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # Serveur Web Apache + PHP
+  web:
+    build: .
+    container_name: prwb_web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./uploads:/var/www/html/uploads
+    depends_on:
+      - db
+
+  # Base de données MySQL
+  db:
+    image: mysql:8.0
+    container_name: prwb_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password_ecole
+      MYSQL_DATABASE: prwb_2526_f05
+      MYSQL_USER: user_ecole
+      MYSQL_PASSWORD: user_password_ecole
+    ports:
+      - "33066:3306"
+    volumes:
+      - prwb_mysql_data:/var/lib/mysql
+      # Injecte tous les fichiers .sql présent dans le dossier database/ à l'initialisation
+      - ./database:/docker-entrypoint-initdb.d
+
+  # Service Cron pour la réinitialisation automatique à minuit
+  cron:
+    image: mysql:8.0
+    container_name: prwb_cron
+    restart: always
+    depends_on:
+      - db
+    volumes:
+      - ./database:/database
+      - ./reset_db.sh:/reset_db.sh
+    entrypoint: >
+      /bin/sh -c "
+      microdnf install -y cronie &&
+      echo '0 0 * * * root /bin/sh /reset_db.sh >> /var/log/cron.log 2>&1' > /etc/cron.d/db-reset-cron &&
+      chmod 0644 /etc/cron.d/db-reset-cron &&
+      crond -n
+      "
+
+
+
+volumes:
+  prwb_mysql_data:

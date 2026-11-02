@@ -295,5 +295,3 @@ class ControllerUser extends Controller {
             ]);
     }    
 }
-?>
-
